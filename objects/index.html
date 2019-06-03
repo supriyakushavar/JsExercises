@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+    let person = {
+        name : "supriya",
+        age : 28 ,
+        place : "Hassan",
+    } 
+    console.log(person.name); // supriya
+    for( let key in person){
+        console.log(typeof key);// gives string for all elements 
+        console.log(key);
+        console.log(person[key]);
+    }
+
+    console.log(typeof person.age);
+
+    //method inside object
+    let persons = {
+        name : "supriya",
+        age : 28 ,
+        place : "Hassan",
+        say : function(){
+            console.log("hi");
+        }
+    } 
+
+    persons.say();
+    console.log(typeof persons.say);
+    </script>
+</body>
+</html>
