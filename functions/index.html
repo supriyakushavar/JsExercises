@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Functions</title>
+</head>
+<body>
+    <script>
+    var a = 2;
+    var b = 4;
+    // normal function
+    function add(x , y){
+        console.log(x + y);
+    }
+    add(4 , 5);
+    //arrow function
+   const multiply = (a , b) => {
+    return a*b;
+    };
+    console.log(multiply(2, 3));
+
+    //arrow function in single line
+    const sub = (a , b) => a - b;
+    var result = sub(8 , 4);
+    console.log(result);
+
+    const sayHello = (name) => {
+    console.log("Hello from " + name);         // this function retrieves a paramater en prints a sentence to the console.
+    };
+
+    const persons = ["Tom", "Yoda", "Ron"];  // Create an array with elements and store it in the variable 'persons'
+    persons.forEach(person => sayHello(person));
+    </script>
+
+
+
+</body>
+</html>
